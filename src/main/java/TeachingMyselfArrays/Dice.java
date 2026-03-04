@@ -12,7 +12,7 @@ public enum Dice {
 
     private int[] range;
 
-    private DieRolls(int[] inputRange){
+    private Dice(int[] inputRange){
         this.range = inputRange;
     }
     public int[] getRange() {
