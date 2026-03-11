@@ -1,0 +1,33 @@
+Problem 1: The Case-Insensitive Log Auditor
+
+The Goal: Practice using Scanner with BufferedReader while handling varying capitalization.
+
+The Task: Create a program that reads a .txt file representing a server log. Count how many times the word "ERROR" appears.
+
+    Constraint: The log might contain error, Error, or ERROR. Your code must catch all of them.
+
+    Bonus: Print the total count and the percentage of lines that contained at least one error.
+
+Problem 2: The Punctuation "Cleaner"
+
+The Goal: Master sc.useDelimiter() to handle real-world text (books, articles).
+
+The Task: Write a program that searches a file for a specific name (e.g., "Java").
+
+    The Challenge: In the file, the word appears as "Java.", "Java,", "(Java)", and "Java!".
+
+    Requirement: Use sc.useDelimiter("\\W+") to ensure your scanner ignores all punctuation and only "sees" the letters.
+
+    Output: Print each instance found and the total count.
+
+Problem 3: The "Context" Finder (Buffer Power)
+
+The Goal: Move beyond simple counting and start extracting surrounding data.
+
+The Task: Instead of just counting the word, print the entire line where the word is found, along with the line number.
+
+    The Strategy: Use BufferedReader.readLine() inside a loop. Use a counter variable to track the line number.
+
+    The Twist: Only print the line if it contains your target word.
+
+    Output Format: Line 42: [The actual text of the line]
