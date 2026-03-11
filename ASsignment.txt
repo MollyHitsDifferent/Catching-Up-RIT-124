@@ -7,7 +7,12 @@ always ignore empty lines. Your method should search the file for any instance o
  be 9). You may ignore punctuation and capitalization. Note:  Do not include the synopsis 
  of the plot in the header when counting.
 
-Direction notes are denoted in media scripts with square brackets. For example, [WIND WHISTLING] appears in the very first line of the Morbius script. Define a method in your Morbius class called "findStageDirections" that counts the number of stage directions in the morbius script. Hint: All instances of stage directions begin with '[', end with ']', and are always at the beginning of their respective lines.
+Direction notes are denoted in media scripts with square brackets. For example, 
+[WIND WHISTLING] appears in the very first line of the Morbius script. 
+Define a method in your Morbius class called "findStageDirections" 
+that counts the number of stage directions in the morbius script. 
+Hint: All instances of stage directions begin with '[', end with ']',
+ and are always at the beginning of their respective lines.
 
 
 Define a method in your Morbius named "reverseLine()"that prompts the user for a line number. Your method should navigate to that line, print the line out, and then print it with the words in reverse order (only the order of the words in the sentence, the words themselves should remain unchanged). You may ignore punctuation and capitalization.
