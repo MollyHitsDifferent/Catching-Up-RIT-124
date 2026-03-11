@@ -16,7 +16,7 @@ public class Morbius {
             
             while (scanner.hasNext()) {
                 String checker = scanner.next();
-                if (checker.contains("\n" + "[")){
+                if (checker.contains("[")){
                     String holder = "";
                     holder = holder + checker + " ";
                 while (!checker.contains("]") && scanner.hasNext()){
