@@ -1,0 +1,55 @@
+Create a new Java class named "Morbius" and define a method named "findMorbius." 
+The full transcript of the hit 2022 thriller Morbius has been provided for you in a 
+text file named morbius.txt. For each of the following questions, your methods should 
+always ignore empty lines. Your method should search the file for any instance of the word 
+'Morbius' and print the entire line that they appear on. (Including instances of "Morbius"
+ within stage directions, there should be 11 total. Without stage directions, there should 
+ be 9). You may ignore punctuation and capitalization. Note:  Do not include the synopsis 
+ of the plot in the header when counting.
+
+Direction notes are denoted in media scripts with square brackets. For example, [WIND WHISTLING] appears in the very first line of the Morbius script. Define a method in your Morbius class called "findStageDirections" that counts the number of stage directions in the morbius script. Hint: All instances of stage directions begin with '[', end with ']', and are always at the beginning of their respective lines.
+
+
+Define a method in your Morbius named "reverseLine()"that prompts the user for a line number. Your method should navigate to that line, print the line out, and then print it with the words in reverse order (only the order of the words in the sentence, the words themselves should remain unchanged). You may ignore punctuation and capitalization.
+An example output would look like:
+Enter line number: 9
+Normal: We shouldn’t be here when it gets dark.
+Reversed: dark. Gets it when here be shouldn't We
+
+Create a new Java class named "NodeUtils" and define a static method named "length" that declares a parameter for a Node<String> and uses iteration to find and return the length of the sequence. Define a main method with the appropriate signature and use it to test your length method. Consider at least three test cases: the empty sequence (null), a sequence with one node, and a sequence with two or more nodes. 
+In the NodeUtils class, define a new static method named "lengthRec" that declares a parameter for a Node<Integer> that uses recursion to find and return the length of the sequence. Test your new method by calling it from main. Use the same test cases that you used when testing the iterative version of the method.
+A Jelly Bean has a Color (red, orange, yellow, green, blue, purple, black, or white) and a Flavor (cherry, orange, lemon, lime, raspberry, licorice, and coconut). Define enumerations for the possible colors and flavors of a jelly bean. 
+Benni Brotts Many Flavor GelsTM can come in any color/flavor combination, e.g. a red-colored, coconut-flavored bean. The natural order of the beans is alphabetical by color. Define a class for BenniBrottsGels. Test it by creating several instances, putting them into a list, and sorting them.
+Some customers like to sort their beans by flavor (of course this means they need to take a small bite first, but ignore that for now). Define a helper class that arranges BenniBrotssGels by flavor in the same order listed above (hint: you may enhance your enumeration to make this easier). If two beans have the same flavor, arrange them alphabetically by color. Test your helper class by sorting the same list that you made previously.
+The Stack abstract data type defines at least the following methods: 
+push(E value) - pushes a value onto the top of the stack.
+top() - returns but does not remove the value at the top of the stack.
+pop() - removes and returns a value from the stack.
+size() - returns the number of values in the stack.
+If you have not already done so, define an interface to represent the stack abstract data type.
+Using the generic Node class, create an implementation of the Stack interface named NodeStack. Hint: You should have fields for the top of the stack (a Node) and the size. If you are using an iterable version of the Stack interface, stub out the iterator() method for now. Define a main method with the appropriate signature and use it to test your NodeStack.
+If you have not already done so, modify your Stack interface so that it extends Iterable. Make your NodeStack class iterable so that it works with Java's for each loop. It should iterate over the elements in order from top to bottom. The elements should be removed from the stack as they are returned by the iterator. In other words, if the for each loop runs to completion, the stack should be empty. Use main to test the new functionality by using a for each loop to iterate over your stack; print the size of the stack before and after the loop executes.
+Recall that an infix traversal visits nodes in the order left-middle-right. You implemented an infix traversal on the BinaryNode that you wrote as part of your class activities. Define a new method named "prefixTraversal" and implement it to visit nodes in the order middle-left-right. 
+Recall that a heap may be arranged in one of two ways: a min heap prioritizes values in ascending order (smaller values have higher priorities), and a max heap prioritizes them in descending order (larger values have higher priorities). Using the ArrayHeap that you wrote as part of your in-class activities as a starting point, create a MaxArrayHeap that implements a max heap. Define a main method with the appropriate signature and use it to test your max heap - remember, the largest value should always be the first that is removed from the heap.
+
+The nodes in a binary tree have exactly two subtrees: left and right (either or both of which may be null). The nodes in an n-ary tree have zero or more subtrees. Create a new generic class called TreeNode and use it to implement an N-Ary tree node. You must include at least the following methods:
+A constructor that sets the value in the tree node.
+An accessor for the value.
+addChild(TreeNode<E> child) - adds the specified child (subtree) to the tree node.
+getChildren() - returns a collection of TreeNode<E> children.
+A toString() that returns a String in the format "TreeNode{value=<value>, children=<children>}". Do not include the children if there are none.
+Define a main method with the appropriate signature and use it to build the tree depicted above. Print the tree when you are finished. Your output should match the example below.
+TreeNode{value=P, children=[TreeNode{value=Q, children=[TreeNode{value=A, children=[TreeNode{value=D, children=[TreeNode{value=L}, TreeNode{value=M}]}]}, TreeNode{value=B, children=[TreeNode{value=E}, TreeNode{value=F}, TreeNode{value=G}]}]}, TreeNode{value=R, children=[TreeNode{value=C, children=[TreeNode{value=H}, TreeNode{value=I}, TreeNode{value=J}, TreeNode{value=K}]}]}]}
+Implement a findNode(E target) method on your TreeNode that returns the TreeNode containing the target value (if it exists) and null otherwise. Use your main method to test it by searching for the nodes containing values "F", "C", "X", and "Y". 
+TreeNode{value=F}
+TreeNode{value=C, children=[TreeNode{value=H}, TreeNode{value=I}, TreeNode{value=J}, TreeNode{value=K}]}
+null
+null
+Implement a Tree class that uses your TreeNode to implement an N-ary tree. The Tree should hide its implementation details, i.e. none of the methods that you write should specify TreeNode as a parameter or a return type. You should provide at least the following methods:
+A constructor that creates a Tree with a value - this value should be used to make the root node.
+add(E parent, E child) - adds the specified child to the parent in the tree. Has no effect if the parent does not exist in the tree. 
+getChildren(E value) - Finds the TreeNode containing the specified value and returns a List<E> of its child values. Return an empty list if the parent does not exist.
+search(E target) - returns true if the value exists in the tree, and false otherwise.
+prefixTraversal() - performs a prefix traversal of the tree and returns it as a string.
+Define a main method with the appropriate signature and use your Tree class to build the tree depicted above. Perform a prefix traversal and print the string to standard output. Your output should match the following:
+P Q A D L M B E F G R C H I J K
