@@ -15,7 +15,10 @@ Hint: All instances of stage directions begin with '[', end with ']',
  and are always at the beginning of their respective lines.
 
 
-Define a method in your Morbius named "reverseLine()"that prompts the user for a line number. Your method should navigate to that line, print the line out, and then print it with the words in reverse order (only the order of the words in the sentence, the words themselves should remain unchanged). You may ignore punctuation and capitalization.
+Define a method in your Morbius named "reverseLine()"that prompts the user for a line number.
+ Your method should navigate to that line, print the line out, and then print it with the words 
+ in reverse order (only the order of the words in the sentence, the words themselves should remain 
+ unchanged). You may ignore punctuation and capitalization.
 An example output would look like:
 Enter line number: 9
 Normal: We shouldn’t be here when it gets dark.
